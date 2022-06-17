@@ -38,13 +38,13 @@ const fbirthDate = birthDate.split("-").reverse().join("/");
     // console.log('year_age' , year_age );
     // console.log('day_age' , day_age )
     // console.log('month_age' , month_age )
- 
+    // `<a href="${`mailto:${email}?subject=Subject&body=message%20goes%20here`}">${email}</a>`;
 
     
 
 document.getElementById('rtoday').innerText = today;
 document.getElementById('rname').innerText = name;
-document.getElementById('remail').innerHTML = `<a href="${`mailto:${email}?subject=Subject&body=message%20goes%20here`}">${email}</a>`;
+document.getElementById('remail').innerHTML =  email
 document.getElementById('rbirthDate').innerText = fbirthDate;
 document.getElementById('rname').innerText = name;
 document.getElementById('rcolor').innerText = color;
