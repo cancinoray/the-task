@@ -38,9 +38,7 @@ const fbirthDate = birthDate.split("-").reverse().join("/");
     // console.log('year_age' , year_age );
     // console.log('day_age' , day_age )
     // console.log('month_age' , month_age )
-    const sendEmail = () => {
-        email.location.href = `mailto:${email}?subject=Subject&body=message%20goes%20here`;
-    }
+ 
 
     
 
@@ -52,5 +50,3 @@ document.getElementById('rname').innerText = name;
 document.getElementById('rcolor').innerText = color;
 document.getElementById('rage').innerText = `${year_age} years and ${month_age} months`;
 document.getElementById("rcolorPreview").style.background = color;
-
-sendEmail();
