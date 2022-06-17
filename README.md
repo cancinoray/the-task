@@ -10,4 +10,5 @@
 
 ## About The Author
 -You can find my personal project here: [Kuya Ray | Developer](https://www.kuyaray.tech)
+
 -I usually used React in my projects :)

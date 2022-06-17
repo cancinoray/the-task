@@ -42,7 +42,7 @@ const fbirthDate = birthDate.split("-").reverse().join("/");
 
 document.getElementById('rtoday').innerText = today;
 document.getElementById('rname').innerText = name;
-document.getElementById('remail').innerText = email;
+document.getElementById('remail').innerText = mailto:email;
 document.getElementById('rbirthDate').innerText = fbirthDate;
 document.getElementById('rname').innerText = name;
 document.getElementById('rcolor').innerText = color;
