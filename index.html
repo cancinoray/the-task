@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+   </head>
+<body>
+
+  <div class="container" id="container">
+    <div class="title" id='title'>Tell us about yourself</div>
+    <span class='title  'id='title2'></span>
+    <span class='title  'id='title3'></span>
+    <div class="content">
+      <div action='result.html' id='form'>
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input
+              id="name"
+              type="text"
+              placeholder="Enter your name" 
+              required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input
+              id="email"
+              type="text"
+              placeholder="Enter your email"
+              required>
+          </div>
+          <div class="input-box">
+            <span class="details">Date of Birth</span>
+            <input
+              id="birthDate"
+              type="date"
+              placeholder="dd-mm-yyyy"
+              value=""
+              min="1997-01-01" max="2030-12-31" 
+              required>
+          </div>
+          <div class="input-box">
+            <span class="details">Favorite Color</span>
+            <input
+              id="color"
+              type="text"
+              placeholder="Enter your favorite color"
+              required>
+          </div>
+        </div>
+        <div class="button" id="button">
+          <input type="submit" value="Submit" >
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPT -->
+    <script src="./script.js"></script>
+</body>
+</html>
