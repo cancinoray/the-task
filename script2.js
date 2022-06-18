@@ -3,19 +3,21 @@ const email = localStorage.getItem('email');
 const birthDate = localStorage.getItem('birthDate');
 const color = localStorage.getItem('color');
 const today = localStorage.getItem('today');
+const sendEmail = document.getElementById('remail')
 
-if(birthDate){
-    console.log('birthDate exists');
-}else{
-    console.log('birthDate is not found');
-}
+// if(birthDate){
+//     console.log('birthDate exists');
+// }else{
+//     console.log('birthDate is not found');
+// }
 
 const fbirthDate = birthDate.split("-").reverse().join("/");
 
      //collect input from HTML form and convert into date format  
      //birthDate from localStorage and new Date() function
 
-    //calculate the difference of dates  
+    //calculate the difference of dates
+    //converting it dates to millisecond  
 const diffInMillisecond = new Date() - new Date(birthDate);
 // console.log('diffInMillisecond', diffInMillisecond)
 
@@ -28,6 +30,14 @@ const month_age = Math.floor(day_age/30);
     // console.log('day_age' , day_age )
     // console.log('month_age' , month_age )
     // `<a href="${`mailto:${email}?subject=Subject&body=message%20goes%20here`}">${email}</a>`;
+
+
+
+sendEmail.addEventListener('click', () => {
+    console.log('Click!');
+    window.open(`mailto:${email}`);
+
+})
 
     
 

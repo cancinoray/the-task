@@ -15,7 +15,7 @@ body{
   background: linear-gradient(135deg, #71b7e6, #9b59b6);
 }
 .container{
-  max-width: 800px;
+  max-width: 1000px;
   width: 100%;
   background-color: #fff;
   padding: 25px 30px;
@@ -129,6 +129,13 @@ div .input-box span.details{
   /* transdiv: scale(0.99); */
   background: linear-gradient(-135deg, #71b7e6, #9b59b6);
   }
+
+#remail {
+  cursor: pointer;
+  text-decoration: underline;
+  color: blue;
+}
+
  @media(max-width: 584px){
  .container{
   max-width: 100%;
